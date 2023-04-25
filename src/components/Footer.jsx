@@ -2,7 +2,7 @@ const Footer = (props) => {
   console.log(props);
   return (
     <>
-      <p>{props.footer}</p>
+      <footer>{props.footer}</footer>
     </>
   );
 };

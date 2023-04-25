@@ -1,9 +1,9 @@
 import Title from "./Title";
-const Header = (props) => {
+const Header = () => {
   return (
-    <>
+    <header>
       <Title title="The Job Board" />
-    </>
+    </header>
   );
 };
 

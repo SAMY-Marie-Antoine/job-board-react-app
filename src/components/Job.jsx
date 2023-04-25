@@ -1,12 +1,12 @@
-const Job = (props) => {
+const Job = ({ className, title, contractType, country, city }) => {
   return (
     <>
-      <div className={props.className}>
-        <p>{props.title}</p>
-        <p>{props.contractType}</p>
-        <p>{props.country}</p>
-        <p>{props.city}</p>
-      </div>
+      <article className={`job ${className}`}>
+        {title && <h2>{title}</h2>}
+        <p>
+          {contractType} - {country} - {city}
+        </p>
+      </article>
     </>
   );
 };
